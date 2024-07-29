@@ -1,6 +1,6 @@
 <h1 align="center"> Decodificador textos: Desafio Alura One </h1>
 <p align="center">
-<img  loading="lazy" src="https://img.shields.io/badge/Status-Em%20desenvolvimeneto-yellow"/>
+<img  loading="lazy" src="https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square"/>
 <img loading="lazy" src=" https://img.shields.io/github/license/claiton40/decodificador"/>
 </p>
 <h2> Descrição: </h2>
