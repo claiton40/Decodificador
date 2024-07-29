@@ -12,3 +12,5 @@
 <p>Conforme pode ser visto abaixo, a página possui duas áreas distintas. Uma para informar o texto e outra para para verificar o resultado da codificação/decodificação. Sendo que esta ultima conta com uma função para copia desse resultado</p>
 
 ![alt text](img/gifprojeto.gif)
+
+<a href="[https://github.com/claiton40](https://claiton40.github.io/Decodificador/)"> Deploy do projeto no Github Pages</a>
