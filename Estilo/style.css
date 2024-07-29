@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root{
-    --corprincipal: #2e2323;
-    --corsecundaria:#000000;
-    --cortitulo:#eb1616;
+    --corprincipal: #000000;
+    --corsecundaria:#3D0000;
+    --cortitulo:#FF0000;
+    --cortitulo2:#950101;
     }
 
 body{
-    background: var(--corsecundaria);
+    background: var(--corprincipal);
+    box-sizing:border-box;
     }
 
 *{
@@ -21,8 +23,20 @@ body{
 
 .cabecalho{
     display: flex;
-    justify-content: space-between;
-    padding: 2%;
+    flex-direction: column;
+    /* background-color: aqua; */
+
+}
+
+.icons ion-icon{
+    margin: 1%;
+    width: 2%;
+    height: 25px;
+    color: var(--cortitulo);
+}
+
+.icons ion-icon:hover{
+    color: var(--cortitulo2);
 }
 
  h1{
@@ -30,40 +44,35 @@ body{
     text-align: center;
 }
 
-.icons ion-icon{
-    margin-left: 2% ;
-    width: 25px;
-    height: 25px;
-    color: var(--cortitulo);
-}
-
-.icons ion-icon:hover{
-    color: #f98484;
-}
-
 .cabecalho img{
-    max-width:70px;
-    max-height:70px;
+    max-width:5%;
+    max-height:5%;
     width: auto;
     height: auto;
+}
+
+
+.main_container{
+    /* background-color: aliceblue; */
+    padding-bottom: 2%;
 }
 
 .container-input{
     display: flex;
     justify-content: space-between;
-    padding: 2% 0 0 4%;
     margin-left:10%;
 }
 
 .container-input .input{
-    width: 400px;
-    height: 330px;
+
+    box-sizing: border-box;
+
 }
 
 #input-texto{
-    width: 550px;
-    height: 600px;
-    font-size: 27px;
+    width: 100%;
+    height: 80%;
+    font-size: 1.6rem;
     color: var(--cortitulo);
     background: transparent;
     box-shadow: none;
@@ -71,40 +80,38 @@ body{
     border-radius: 5%;
     resize: none;
     outline: 0;
-    padding: 10px;
+    padding: 10%;
 }
 
 #input-texto::placeholder{
-    color: #f98484;
+    color: var(--cortitulo2);
     font-style: italic;
 }
 
 #output{
-    position: fixed;
-    right:5% ;
-    left: 70%;
-    top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    align-items: center;
     border-radius: 20px;
-    width: 600px;
-    height:900px;
     margin-right: 3%;
-    background-color: #3e3636;
-    box-shadow: -5px 3px 10px #eb1616;
-    padding-top: 5%;
-    padding-left: 2%;
+    background-color: var(--corsecundaria);
+    box-shadow: -5px 3px 10px  var(--cortitulo);
+    padding: 3%
 }
 
 #output h2{
-    font-size: 50px;
+    font-size: 1.5rem;
     color: var(--cortitulo);
 }
 
 #output img{
-    max-width:350px;
-    max-height:400px;
+    max-width:50%;
+    max-height:50%;
     width: auto;
     height: auto;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-left: 15%;
     
 }
@@ -112,44 +119,45 @@ body{
 .container-bnt button{
     border: 2px solid var(--cortitulo);
     border-radius: 10px;
-    text-decoration: none;
-    color: #eb1616;
-    background-color: #3e3636;
-    width: 400px;
-    height: 60px;
+    color: var(--cortitulo);
+    background-color: var(--corsecundaria);
+    width: 15%;
+    height: 5%;
     margin-left: 10%;
-    margin-top: 18%;
     cursor: pointer;
-    font-size:40px;
+    font-size: 1.7rem;
 }
+.container-bnt button:hover{
+    border: 2px solid var(--corprincipal);
+    color: var(--corprincipal);
+    background-color: var(--cortitulo);
+    transition: 0.5s all;
+ }
 
 .btn-copiar{
     border: 2px solid var(--cortitulo);
     border-radius: 10px;
-    text-decoration: none;
-    color: #eb1616;
-    background-color: #000000;
-    width: 400px;
-    height: 60px;
+    color: var(--cortitulo);
+    background-color: var(--corprincipal);
+    width: 40%;
+    height: 5%;
     cursor: pointer;
-    font-size:xx-large;
-    margin-top: 23%;
-    margin-left: 15%;
-    font-size:40px;
-}
-
-
-.container-bnt button:hover{
-   border: 2px solid var(--corsecundaria);
-   color: #3e3636;
-   background-color: #eb1616;
-   transition: 0.5s all;
+    font-size:1.7rem;
+    margin-top: 7%;
 }
 
 .btn-copiar:hover{
     border: 2px solid;
-   color: #3e3636;
-   background-color: #eb1616;
-   transition: 0.5s all;
+    color: var(--corsecundaria);
+    background-color: var(--cortitulo);
+    transition: 0.5s all;
+}
+
+.rodape{
+    background-color: var(--corsecundaria);
+    color: var(--cortitulo2);
+    text-align: center;
+    font-size: 1,5rem;
+    padding: 0.50%;
 }
 
