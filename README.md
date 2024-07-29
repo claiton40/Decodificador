@@ -13,4 +13,4 @@
 
 ![alt text](img/gifprojeto.gif)
 
-<a href="https://github.com/claiton40](https://claiton40.github.io/Decodificador/)"> Você pode expirementar o decodificador clicando aqui</a>
+<a href="https://claiton40.github.io/Decodificador/"> Você pode expirementar o decodificador clicando aqui</a>
